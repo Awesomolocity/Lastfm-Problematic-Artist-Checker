@@ -25,5 +25,5 @@ The script is set to automatically update (theoretically). You can check for upd
 
 ### Notes
 
-- **This does not check *all* scrobbles**. It only checks recent scrobbles, top artists, top albums, and top tracks.
+- **This does not check *all* scrobbles**. It only checks recent scrobbles (`/library`), top artists (`/library/artists`), top albums (`/library/albums`), and top tracks (`/library/tracks`). It also only looks within the past year (`?date_preset=LAST_365_DAYS`)
 - The artists are listed in a Google spreadsheet [here](https://docs.google.com/spreadsheets/d/13_hUUbGqd_La2Zmmz55Zt6DJTDB_RtE7ZhzlOAWJzrs/edit?usp=sharing)

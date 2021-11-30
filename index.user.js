@@ -2,7 +2,7 @@
 // @name         LastFM Problematic Artist Checker
 // @namespace    https://github.com/Awesomolocity/Lastfm-Problematic-Artist-Checker
 // @downloadURL  https://github.com/Awesomolocity/Lastfm-Problematic-Artist-Checker/raw/master/index.user.js
-// @version      1.2.1
+// @version      1.3.1
 // @description  Checks LastFM profiles for any problematic artists. It's worth remembering that a non-zero number doesn't necessarily mean the user in question is a nazi / nazi sympathizer. But it's still worth keeping an eye on it.
 // @author       Awesomolocity
 // @match        https://www.last.fm/*
@@ -49,19 +49,19 @@
 	}
 	function getArtistsFromTopArtists(){
 		const username = getUsername();
-		const artistsURL = 'https://www.last.fm/user/'+ username +'/library/artists';
+		const artistsURL = 'https://www.last.fm/user/'+ username +'/library/artists/?date_preset=LAST_365_DAYS';
 		
 		return getArtistsFromPage(artistsURL, '.link-block-target');
 	}
 	function getArtistsFromTopAlbums(){
 		const username = getUsername();
-		const albumsURL = 'https://www.last.fm/user/'+ username +'/library/albums';
+		const albumsURL = 'https://www.last.fm/user/'+ username +'/library/albums/?date_preset=LAST_365_DAYS';
 		
 		return getArtistsFromPage(albumsURL, '.chartlist-artist');
 	}
 	function getArtistsFromTopTracks(){
 		const username = getUsername();
-		const tracksURL = 'https://www.last.fm/user/'+ username +'/library/tracks';
+		const tracksURL = 'https://www.last.fm/user/'+ username +'/library/tracks/?date_preset=LAST_365_DAYS';
 		
 		return getArtistsFromPage(tracksURL, '.chartlist-artist');
 	}
