@@ -2,11 +2,10 @@
 // @name         LastFM Problematic Artist Checker
 // @namespace    https://github.com/Awesomolocity/Lastfm-Problematic-Artist-Checker
 // @downloadURL  https://github.com/Awesomolocity/Lastfm-Problematic-Artist-Checker/raw/master/index.user.js
-// @version      1.2.0
+// @version      1.2.1
 // @description  Checks LastFM profiles for any problematic artists. It's worth remembering that a non-zero number doesn't necessarily mean the user in question is a nazi / nazi sympathizer. But it's still worth keeping an eye on it.
 // @author       Awesomolocity
-// @match        https://www.last.fm/user/*
-// @exclude      https://www.last.fm/user/*/*
+// @match        https://www.last.fm/*
 // @icon         https://www.google.com/s2/favicons?domain=last.fm
 // ==/UserScript==
 
